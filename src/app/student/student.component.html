@@ -1,0 +1,67 @@
+<p>student works!</p>
+<input type="text" placeholder="search name here"[(ngModel)]="term" (keypress)="search()">
+<input type="text" placeholder="search company here"[(ngModel)]="term1" (keypress)="search1()">
+
+<button class="btn btn-success" (click)="placed()">OnlyPlacedStudents</button>
+<button class="btn btn-success" (click)="notplaced()">NotPlacedStudents</button>
+<button (click)="packagelh()">package low to high</button>
+<button (click)="packagehl()">package high to low</button>
+<button (click)="reduce()">cuttings</button>
+<button (click)="bonus()">bonus</button>
+<button (click)="package1()">totalpackage</button>
+<button class="btn btn-danger"(click)="student()">totalstudents</button>
+
+
+<div>
+    <label>Name:</label>
+    <input type="text"[(ngModel)]="name">
+    <br>
+    <label>Dob:</label>
+    <input type="date" [(ngModel)]="Dob">
+    <br>
+    <label>education:</label>
+    <input type="text" [(ngModel)]="education">
+    <br>
+    <label>isplaced</label>
+    <input type="radio" name="sai" value="true"[(ngModel)]="isplaced">
+    <label>yes</label>
+    <input type="radio" name="sai" value="false"[(ngModel)]="isplaced">
+    <label>N0</label>
+    <br>
+    <label>company:</label>
+    <input type="text" [(ngModel)]="company">
+    <br>
+    <label>package:</label>
+    <input type="number" [(ngModel)]="package">
+    <br>
+    <button class="btn btn-success"(click)="add()">Add to new students</button>
+    
+</div>
+
+<table class="table table-brown">
+    <thead>
+        <tr>
+            <th>S.NO</th>
+            <th>name</th>
+            <th>Dob</th>
+            <th>education</th>
+            <th>isplaced</th>
+            <th>company</th>
+            <th>package</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.Dob}}</td>
+            <td>{{student.education}}</td>
+            <td>{{student.isplaced}}</td>
+            <td>{{student.company}}</td>
+            <td>{{student.package}}</td>
+            <td>
+                <button class="btn btn-danger"(click)="delete(i)">delete</button>
+            </td>
+        </tr>
+    </tbody>
+    </table>

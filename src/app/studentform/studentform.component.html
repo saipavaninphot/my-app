@@ -1,0 +1,75 @@
+<input type="text" placeholder="search"[(ngModel)]="term" (keypress)="filter()">
+
+<label>page:</label>
+<select [(ngModel)]="page">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+</select>
+<label>limit:</label>
+<select [(ngModel)]="limit">
+    <option>5</option>
+    <option>10</option>
+    
+</select>
+<button (click)="pagination()" class="btn btn-success">page</button>
+
+
+<label for="">column:</label>
+<select [(ngModel)]="column">
+    <option>name</option>
+    <option>city</option>
+    <option>phone</option>
+    <option>address</option>
+    <option>photo</option>
+    <option>id</option>
+    <option>placedIn</option>
+    <option>salary</option>
+
+</select>
+<label for="">order</label>
+<select [(ngModel)]="order">
+    <option>asc</option>
+    <option>desc</option>
+</select>
+<button (click)="sort()" class="btn btn-success">sort</button>
+
+
+
+<table class="table table brown">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>city</th>
+            <th>phone</th>
+            <th>address</th>
+            <th>photo</th>
+            <th>placedIn</th>
+            <th>salary</th>
+            <th>id</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let studentform of studentforms">
+            <td>{{studentform.name}}</td>
+            <td>{{studentform.city}}</td>
+            <td>{{studentform.phone}}</td>
+            <td>{{studentform.address}}</td>
+            <td>{{studentform.photo}}</td>
+            <td>{{studentform.placedIn}}</td>
+            <td>{{studentform.salary}}</td>
+            <td>{{studentform.id}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="delete(studentform.id)" >delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,36 @@
+
+<h1>create studentform</h1>
+
+<form [formGroup]="studentForm">
+    <label for="">name</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label for="">city</label>
+    <input type="text" formControlName="city">
+    <br>
+    <label for="">phone</label>
+    <input type="text" formControlName="phone">
+    <br>
+    <label for="">address</label>
+    <input type="text" formControlName="address">
+    <br>
+    <label for="">photo</label>
+    <input type="text" formControlName="photo">
+    <br>
+    <label for="">placedIn</label>
+    <input type="text" formControlName="placedIn">
+    <br>
+    <label for="">salary</label>
+    <input type="text" formControlName="salary">
+    <br>
+    <label for="">id</label>
+    <input type="text" formControlName="id">
+    <br>
+
+    <button class="btn btn-success"(click)="submit()">submit</button>
+
+
+</form>
+
+
+

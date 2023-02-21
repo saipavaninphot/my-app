@@ -1,0 +1,14 @@
+form{
+    background-color:blue;
+    height: 100vh;
+    
+}
+
+label{
+    width: 150px;
+    font-weight: 60;
+}
+button{
+    background-color:rgb(234, 255, 0);
+    
+}

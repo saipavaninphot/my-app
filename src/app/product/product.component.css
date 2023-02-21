@@ -1,0 +1,15 @@
+.parent{
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    justify-content: center;
+    justify-items: center;
+    display: inline-block;
+}
+.child{
+    width: 60%;
+    height: 60%;
+    background-color:whitesmoke;
+    margin: 10px;
+    
+}
