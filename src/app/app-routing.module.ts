@@ -5,6 +5,7 @@ import { AuthenticationGuard } from './authentication.guard';
 import { BankingComponent } from './banking/banking.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CartComponent } from './cart/cart.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
@@ -17,7 +18,9 @@ import { EmployesComponent } from './employes/employes.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
+import { ItemsComponent } from './items/items.component';
 import { LoginComponent } from './login/login.component';
+import { NavComponent } from './nav/nav.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ParentComponent } from './parent/parent.component';
 import { PhoneComponent } from './phone/phone.component';
@@ -55,7 +58,11 @@ const routes: Routes = [
   {path:'create-user',component:CreateUserComponent},
   {path:'vehicle-details/:id',component:VehicleDetailsComponent},
   {path:'edit-vehicle/:id',component:CreateVehicleComponent},
-  {path:'parent',component:ParentComponent}
+  {path:'parent',component:ParentComponent},
+  {path:'items',component:ItemsComponent},
+  {path:'nav',component:NavComponent},
+  {path:'cartlist',component:CartlistComponent},
+  
   
 ]},
 {path:'',component:DashboardComponent},

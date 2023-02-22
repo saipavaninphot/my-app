@@ -7,8 +7,9 @@
 .child1{
     width: 25%;
     height: 100%;
-    background-color:paleturquoise
-    ;
+    background-color:paleturquoise;
+    overflow: auto;
+    
 }
 .child2{
     width:75%;

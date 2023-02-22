@@ -35,6 +35,9 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { CounterComponent } from './counter/counter.component';
 import { DisplayComponent } from './display/display.component';
+import { ItemsComponent } from './items/items.component';
+import { NavComponent } from './nav/nav.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +71,9 @@ import { DisplayComponent } from './display/display.component';
     ChildComponent,
     CounterComponent,
     DisplayComponent,
+    ItemsComponent,
+    NavComponent,
+    CartlistComponent,
   
     
 
