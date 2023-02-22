@@ -19,6 +19,7 @@ import { GradeComponent } from './grade/grade.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ParentComponent } from './parent/parent.component';
 import { PhoneComponent } from './phone/phone.component';
 import { ProductComponent } from './product/product.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
@@ -53,7 +54,8 @@ const routes: Routes = [
   {path:'gallery',component:GalleryComponent},
   {path:'create-user',component:CreateUserComponent},
   {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-  {path:'edit-vehicle/:id',component:CreateVehicleComponent}
+  {path:'edit-vehicle/:id',component:CreateVehicleComponent},
+  {path:'parent',component:ParentComponent}
   
 ]},
 {path:'',component:DashboardComponent},

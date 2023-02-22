@@ -31,6 +31,10 @@ import { EmailComponent } from './email/email.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { CounterComponent } from './counter/counter.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +64,10 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
     GalleryComponent,
     CreateUserComponent,
     VehicleDetailsComponent,
+    ParentComponent,
+    ChildComponent,
+    CounterComponent,
+    DisplayComponent,
   
     
 
