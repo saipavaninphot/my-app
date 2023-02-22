@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { Component, Directive, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutCeoComponent } from './aboutus/about-ceo/about-ceo.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { BankingComponent } from './banking/banking.component';
 import { CalculatorComponent } from './calculator/calculator.component';
@@ -62,6 +63,7 @@ const routes: Routes = [
   {path:'items',component:ItemsComponent},
   {path:'nav',component:NavComponent},
   {path:'cartlist',component:CartlistComponent},
+  {path:'about-ceo',component:AboutCeoComponent}
   
   
 ]},
