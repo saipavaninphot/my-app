@@ -58,7 +58,7 @@
             <td>{{student.education}}</td>
             <td>{{student.isplaced}}</td>
             <td>{{student.company}}</td>
-            <td>{{student.package}}</td>
+            <td>{{student.package | salary}}</td>
             <td>
                 <button class="btn btn-danger"(click)="delete(i)">delete</button>
             </td>
