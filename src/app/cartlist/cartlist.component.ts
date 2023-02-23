@@ -11,7 +11,8 @@ export class CartlistComponent {
   public cartcount:number=0;
   constructor(private _commonService:CommonService){
     _commonService.getValue().subscribe(
-
+    
+    // (variable name taken, at data:)
       (data:any)=>{
         this.cartcount=data;
       }

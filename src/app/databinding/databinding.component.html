@@ -1,7 +1,17 @@
-<h1>my name is {{name}</h1>
-<h1>my age is {{number}</h1>
-<h1>is from india{{isIndian}}</h1>
+<h1>my name is {{name}}</h1>
+<h1>my age is {{number}}</h1>
+<h1>is indian:{{isIndian}}</h1>
+<h1>{{phone}}</h1>
+
+
 <button (click)="submit()">submit</button>
-<input type="text"(keypress)="filter()">
+
+<button (dblclick)="test()">test</button>
+
+<input type="text"(keypress)="key()">
+
 <button (mouseenter)="cancel()">cancel</button>
+
 <input type="number"[(ngModel)]="phone">
+
+<button (mouseenter)="enter()"(mouseleave)="leave()">welcome</button>

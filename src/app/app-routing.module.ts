@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { Component, Directive, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AboutCeoComponent } from './aboutus/about-ceo/about-ceo.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { BankingComponent } from './banking/banking.component';
@@ -63,7 +63,11 @@ const routes: Routes = [
   {path:'items',component:ItemsComponent},
   {path:'nav',component:NavComponent},
   {path:'cartlist',component:CartlistComponent},
-  {path:'about-ceo',component:AboutCeoComponent}
+  {path:'about-ceo',component:AboutCeoComponent},
+  {
+    path: 'contactus',
+    loadChildren: () => import('./contactus/contactus.module').then(m => m.ContactusModule)
+  }
   
   
 ]},
@@ -71,7 +75,7 @@ const routes: Routes = [
 {path:'**',component:PagenotfoundComponent},
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
   
 })

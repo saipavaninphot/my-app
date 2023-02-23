@@ -12,6 +12,7 @@ export class ItemsComponent {
 
 add(){
   this._commonService.setValue();
+  
 
 }
 

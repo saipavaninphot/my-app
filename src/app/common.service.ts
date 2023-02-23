@@ -12,6 +12,7 @@ export class CommonService {
 
   setValue(){
     this.countsub.next(this.count++);
+    
   }
 
   getValue(){

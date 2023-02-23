@@ -8,16 +8,28 @@ import { Component } from '@angular/core';
 export class DatabindingComponent {
   public name:string="abcd"
   public number:number=20;
-  public isIndian:boolean=false;
+  public isIndian:boolean=true;
+  public phone:number=91;
+
   submit(){
     alert("submit clicked")
   }
-  filter(){
+  key(){
+
     alert("key pressed in input");
   }
   cancel(){
     alert("mouse entered in cancel button")
   }
-  public phone:number=91;
+  test(){
+    alert("double clicked");
+  }
+  enter(){
+    alert("mouse entered")
+  }
+  leave(){
+    alert("mouse leaved")
+  }
+  
 
 }
