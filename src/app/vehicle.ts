@@ -1,5 +1,5 @@
 export interface Vehicle {
-    vehicle:string;
+    Vehicle:string;
     manufacturer:string;
     model:string;
     type:string;
