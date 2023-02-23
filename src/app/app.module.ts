@@ -42,6 +42,7 @@ import { AboutusModule } from './aboutus/aboutus.module';
 import { PricePipe } from './price.pipe';
 import { SalaryPipe } from './salary.pipe';
 import { RatingPipe } from './rating.pipe';
+import { ImpDirective } from './imp.directive';
 
 
 @NgModule({
@@ -82,6 +83,7 @@ import { RatingPipe } from './rating.pipe';
     PricePipe,
     SalaryPipe,
     RatingPipe,
+    ImpDirective,
   
   
     
