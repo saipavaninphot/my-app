@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Vehicle } from '../vehicle';
 import { VehicleService } from '../vehicle.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { VehicleService } from '../vehicle.service';
 })
 export class VehicleDetailsComponent {
 
-  public vehicle:any={};
+  public vehicle:Vehicle=<Vehicle>{};
     
   //  activated route for get method
   constructor(private _activedRoute:ActivatedRoute,private _vehicleService:VehicleService){
@@ -17,7 +18,7 @@ export class VehicleDetailsComponent {
       (data:any)=>{
         
         this._vehicleService.getVehicle(data.id).subscribe(
-          (data:any)=>{
+          (data:Vehicle)=>{
             this.vehicle=data;
           }
         )
