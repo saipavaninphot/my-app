@@ -80,6 +80,8 @@ export class StudentComponent {
     }
     this.students.push(student);
   }
+
+  
   delete(i:any){
     this.students.splice(i,1);
   }
