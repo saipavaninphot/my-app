@@ -29,12 +29,12 @@
        
     </div>
     <br>
-    <br>
     <label for="">email:</label>
     <input type="text" formControlName="email">
     <div class="text-danger" *ngIf="userForm.get('email')?.touched && userForm.get('email')?.invalid">
         <p *ngIf="userForm.get('email')?.errors?.['required']">email is required</p>
         <p *ngIf="userForm.get('email')?.errors?.['email']">invalid email format</p>
+        <p *ngIf="userForm.get('email')?.errors?.['emailDomain']">you need to capgemini mail only</p>
         
        
     </div>
